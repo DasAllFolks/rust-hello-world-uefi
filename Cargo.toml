@@ -1,6 +1,8 @@
 [package]
 name = "rust-hello-world-uefi"
 version = "0.1.0"
-edition = "2024"
+edition = "2026"
 
 [dependencies]
+log = "0.4.34"
+uefi = { version = "0.41.0", features = ["logger", "panic_handler"] }
